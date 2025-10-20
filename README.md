@@ -20,11 +20,14 @@ I (Luke Hathaway) oversaw the vast majority of the system architecture, design, 
 
 ### 🎤 **Microphone Input**
 - Dynamic routing for five simultaneous microphone sources, one for each singer
-
-### 🧠 **Analysis & Control**
 - Amplitude and pitch detection visualized through a piano interface 
 - Amplitude and pitch compression for smoothness and reducing noise
 - Tunable parameters for each person's voice
+<details>
+	<summary>Click to see screeshots</summary>
+	<img src="Max Screenshots/Input and Paramater Selection/Microphone Input Control.png" alt="Microphone input control" style="width: 400px;" />
+<img src="Max Screenshots/Input and Paramater Selection/Unlocked Microphone Input Control.png" alt="Microphone input control" style="width: 400px;" />
+</details>
 
 ### 🎚 **Sliders and Presets**
 - Adjustable paramaters for the artistic mappings
@@ -35,11 +38,23 @@ I (Luke Hathaway) oversaw the vast majority of the system architecture, design, 
 	- Theramin, phasor, maze
 - Adjustable pitch ranges and thresholds for mappings
 - Adjustable mapping lengths depending on aria length
-
+<details>
+	<summary>Click to see screenshots</summary>
+	<img src="Max Screenshots/Input and Paramater Selection/Modular Mapping Selection.png" alt="Modular mapping selection" style="width: 600px;" />
+</details>
+	
 ### 🎛 **Mapping**
 - The moving windows and the mappings within them are modular
 - Instructions on coordinates and speed are then converted to 2 8-bit ints with a trailing newline
 - Instructions are sent over serial to Arduino
+<details>
+	<summary>Click to see screenshots</summary>
+		<img src="Max Screenshots/Mapping Algorithm/Snake Window.png" alt="Snake Window" style="width: 300px;" />
+		<img src="Max Screenshots/Mapping Algorithm/Phasor Mapping .png" alt="Phasor Mapping" style="width: 300px;" />
+			<img src="Max Screenshots/Instructions to Serial/Serial Encoding Algorithm.png" alt="Serial Encoding Algorithm" style="width: 600px;" />
+	
+</details>
+
 
 ### 🔧 **Arduino**
 - Custom lightweight command parser using bitwise operations
